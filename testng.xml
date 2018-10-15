@@ -2,7 +2,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 <parameter name="Pagename" value="Test"/>
-<parameter name="Phoneno" value="02030390"/>
+<parameter name="Phoneno" value="123456"/>
+<parameter name="MessageSendasms" value="Hello World"/>
+<parameter name="SMTP" value="smtp@gmail.com"/>
+<parameter name="PortNo" value="465"/>
+<parameter name="Username" value="abc@gmail.com"/>
+<parameter name="Pwd" value="1234"/>
+<parameter name="From" value="abc@gmail.com"/>
+<parameter name="To" value="xyz@gmail.com"/>
+<parameter name="Subject" value="SmsnotSent"/>
+<parameter name="MailMessage" value="Sms to phone no 121638383 not sent"/>
   <test thread-count="5" name="Test">
     <classes>
       <class name="CreateAnFuseApp.Project.TestCase1"/>

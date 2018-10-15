@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="Phoneno" value="123456"/>
+  <parameter name="Pagename" value="Test"/>
+  <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="CreateAnFuseApp.Project.TestCase1">
         <methods>
-          <include name="CreateanApp"/>
+          <include name="CreateanApp" invocation-numbers="0"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- CreateAnFuseApp.Project.TestCase1 -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
